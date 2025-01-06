@@ -12,7 +12,8 @@ public class Main {
             System.out.printf("Вычитание %s из %s: %s\n", b[i], a[i], Calculator.substract(a[i], b[i]));
             System.out.printf("Умножение %s на %s: %s\n", a[i], b[i], Calculator.multiply(a[i], b[i]));
             try {
-                System.out.printf("Деление %s на %s: %s\n", a[i], b[i], Calculator.devide(a[i], b[i]));
+                System.out.printf("Деление %s на %s: ", a[i], b[i]);
+                System.out.printf("%s\n", Calculator.devide(a[i], b[i]));
             } catch (ArithmeticException e) {
                 System.out.println(e.getMessage());
             }
